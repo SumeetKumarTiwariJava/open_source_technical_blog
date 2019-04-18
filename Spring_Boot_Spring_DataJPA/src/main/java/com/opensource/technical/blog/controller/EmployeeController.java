@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.opensource.technical.blog.constant.MessageConstant;
 import com.opensource.technical.blog.domain.Employee;
 import com.opensource.technical.blog.irepository.IEmployeeRepository;
 import com.opensource.technical.blog.response.Response;
@@ -34,19 +35,18 @@ public class EmployeeController {
 	ResponseEntity<Response> saveEmployee(@RequestBody Employee emp) {
 		HttpStatus httpstatus = HttpStatus.OK;
 		Response resp = new Response();
+		resp.setHttpstatus(httpstatus);
 		Employee empSaved = null;
 		try {
 			empSaved=iempRepo.save(emp);
 			if(null!=empSaved) {
-				httpstatus = HttpStatus.CREATED;
-				resp.setDescription("Succesfully Saved the Employee..");
-				resp.setHttpstatus(httpstatus);
+				resp.setDescription(MessageConstant.SAVE_SUCCESS);
+				resp.setHttpstatus(HttpStatus.CREATED);
 				resp.setObj(empSaved);
 			}
 		} catch (Exception e) {
-			httpstatus = HttpStatus.INTERNAL_SERVER_ERROR;
-			resp.setDescription("Oops Something went wrong !!");
-			resp.setHttpstatus(httpstatus);
+			resp.setDescription(MessageConstant.INTERNAL_SERVER_ERROR);
+			resp.setHttpstatus(HttpStatus.INTERNAL_SERVER_ERROR);
 			resp.setObj(null);
 		}
 		return new ResponseEntity<Response>(resp, httpstatus);
@@ -57,6 +57,7 @@ public class EmployeeController {
 	ResponseEntity<Response> updateEmployee(@RequestBody Employee emp) {
 		HttpStatus httpstatus = HttpStatus.OK;
 		Response resp = new Response();
+		resp.setHttpstatus(httpstatus);
 		Optional<Employee> empToUpdate = null;
 		Employee empReturnVal =null;
 		try {
@@ -68,22 +69,19 @@ public class EmployeeController {
 				emp.setEmpAge(emp.getEmpAge());
 				empReturnVal=iempRepo.save(emp);
 				if(null!=empReturnVal) {
-					httpstatus = HttpStatus.OK;
-					resp.setDescription("Succesfully Update the Employee Details");
-					resp.setHttpstatus(httpstatus);
+					resp.setDescription(MessageConstant.UPDATE_SUCCESS);
+					resp.setHttpstatus(HttpStatus.OK);
 					resp.setObj(empReturnVal);
 				}
 			}
 			else {
-				httpstatus = HttpStatus.NOT_FOUND;
-				resp.setDescription("Sorry we didn't got the Employee data");
-				resp.setHttpstatus(httpstatus);
+				resp.setDescription(MessageConstant.NOT_FOUND);
+				resp.setHttpstatus(HttpStatus.NOT_FOUND);
 				resp.setObj(empReturnVal);
 			}
 		} catch (Exception e) {
-			httpstatus = HttpStatus.INTERNAL_SERVER_ERROR;
-			resp.setDescription("Oops Something went wrong !!");
-			resp.setHttpstatus(httpstatus);
+			resp.setDescription(MessageConstant.INTERNAL_SERVER_ERROR);
+			resp.setHttpstatus(HttpStatus.INTERNAL_SERVER_ERROR);
 			resp.setObj(null);
 		}
 		return new ResponseEntity<Response>(resp, httpstatus);
@@ -98,21 +96,18 @@ public class EmployeeController {
 		try {
 			empGet=iempRepo.findById(empId);
 			if(empGet.isPresent()) {
-				httpstatus = HttpStatus.OK;
-				resp.setDescription("Succesfully Get the Employee..");
-				resp.setHttpstatus(httpstatus);
+				resp.setDescription(MessageConstant.GET_EMP_SUCCESS);
+				resp.setHttpstatus(HttpStatus.OK);
 				resp.setObj(empGet.get());
 			}
 			else {
-				httpstatus = HttpStatus.NOT_FOUND;
-				resp.setDescription("Sorry we didn't got the Employee data");
-				resp.setHttpstatus(httpstatus);
+				resp.setDescription(MessageConstant.NOT_FOUND);
+				resp.setHttpstatus(HttpStatus.NOT_FOUND);
 				resp.setObj(null);
 			}
 		} catch (Exception e) {
-			httpstatus = HttpStatus.INTERNAL_SERVER_ERROR;
-			resp.setDescription("Oops Something went wrong !!");
-			resp.setHttpstatus(httpstatus);
+			resp.setDescription(MessageConstant.INTERNAL_SERVER_ERROR);
+			resp.setHttpstatus(HttpStatus.INTERNAL_SERVER_ERROR);
 			resp.setObj(null);
 		}
 		return new ResponseEntity<Response>(resp, httpstatus);
@@ -132,21 +127,18 @@ public class EmployeeController {
 			empDelete=iempRepo.findById(empId);
 			if(empDelete.isPresent()) {
 				iempRepo.delete(empDelete.get());
-				httpstatus = HttpStatus.OK;
-				resp.setDescription("Succesfully Delete the Employee..");
-				resp.setHttpstatus(httpstatus);
+				resp.setDescription(MessageConstant.DELETE_EMP_SUCCESS);
+				resp.setHttpstatus(HttpStatus.OK);
 				resp.setObj(null);
 			}
 			else {
-				httpstatus = HttpStatus.NOT_FOUND;
-				resp.setDescription("Sorry we didn't got the Employee data");
-				resp.setHttpstatus(httpstatus);
+				resp.setDescription(MessageConstant.NOT_FOUND);
+				resp.setHttpstatus(HttpStatus.NOT_FOUND);
 				resp.setObj(empDelete);
 			}
 		} catch (Exception e) {
-			httpstatus = HttpStatus.INTERNAL_SERVER_ERROR;
-			resp.setDescription("Oops Something went wrong !!");
-			resp.setHttpstatus(httpstatus);
+			resp.setDescription(MessageConstant.INTERNAL_SERVER_ERROR);
+			resp.setHttpstatus(HttpStatus.INTERNAL_SERVER_ERROR);
 			resp.setObj(null);
 		}
 		return new ResponseEntity<Response>(resp, httpstatus);
