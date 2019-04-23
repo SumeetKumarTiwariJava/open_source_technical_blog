@@ -1,2 +1,2 @@
-# open_source_technical_blog
+# OPEN SOURCE TECHNICAL BLOG
 This repository for the open source technical blog.
