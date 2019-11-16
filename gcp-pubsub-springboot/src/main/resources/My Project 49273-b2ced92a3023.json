@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "proven-mind-258915",
-  "private_key_id": "b2ced92a3023a2a4cd19ceb68279c6561aaed41a",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCpPJwAcjra5tF3\n/J0fiUw+RH2h02AJJ8tiklMEkqxrAB7h24Uaintua6RKnhhAdpW4RiYTrauSPt/4\nth1GiZUmBBUSs/22w20ISR70UmG1+FmPNwhXtZV7+OUqq7W6mne/NrctTJWOsaUM\nVRpkfJa6nCT+Wpq1s7xy3nEilZUNDiyHpi/NvsKJw6++1qPRaa2at+TS6NeT4uFr\nVsRflG53o7VKkM2q5shTTEFeEKytDfYi2pj/Y4AVeRkyLAj8qdUNlq1ejvkJwXzD\nP++qDAV9MVdkQhEkFCq3GLlVlgjYlDM5gcVGZJ5OTTLbbTlFr4U/I3+CQpP9YdW3\nBgYAmvG1AgMBAAECggEAOXoeOYCSQJo39hpTesx0molEaduSOEnNp5Kuo1T1Pfny\ngx69HACAX0YrrDP5ZJthyg35DKHlLWwxQRUI6FX908V7Krj6qEHDHBdJbg00pkrM\nj/lO2gsP0+T6X/2lYNTpaoW4vKfP+4CV35RfvFUcFBDH96Lp/GAo1pJ5thc7Yg0q\nr1c8+H9r4NKlr/7SUWLXHnlNADWSQcBmF3eF/fp9wru9FdfYBTDapUlEcuBWYn/k\n9Fwjbi6iBKhPJ4b2mMnouOnqNhA5AXgdsCAIISm8WjbfaT9X8CgVLRte1/uE+moS\nvAJ5hGOKUl+814JloqpM6QHY7Ney9y7F3IpkRVne2QKBgQDcircm4v7d3uFW34VC\nBNgHVIzp9qRJX+sf8WLBmq8oWvHd3fIiL/0c3cQ+NDLtTIuESrfr42YAXa5/APXt\nAcKwm5D1I6vd9YYPKEaVCT6nU/Gkdq1JzsWOC9Ftt1gKhUmaZ/jFsIQaQA54AMmg\nTzSkfzrH/whJ+yaWBXO4Z75r5wKBgQDEcjoLPkq2OMKqjGjLoiNeE19dHJm659II\nX4ESO5u8hGu7BTvZxfA6PKVeACcczi8569A8agP7whHp5j5MA1y3VTcd+O7BiDM/\nsE0PEpl0qJomoa+KW628pwoncSERU5nxp63JGsDDec5kdq1KpgQwALkCbOJ3SpoO\nFYoazz0iAwKBgQCDsDzO9opTN4v8kLmEg1nvfpgp+EF/IsxGJZ/flRr0EOINpkK4\nEUmlW/KbZhXmxmcklm0eaIl2vHm+kndGj1+Oj0XOav9sKPhkwprq0TtdNO28U7UD\ntnkWaY4jYnAq0A30KhNNECrBdfBtzaKXm9QGSYZy96Eec95FhHnl6eS1jwKBgBWI\nr/Qrj+UJs80eNx6bV2UomnuKdw+V+eARGAT3o8q2eVi26iilGgBIRZhYS/FMaMDg\nqKL2vBkM3QnWw11xwOgX30LZ1tJAK93/ZXMRhuDS2pMBhkyUYCcd6G8KZ6WOlIF4\n8APretXytD0vBS/5otvgOGebp/eLpfeFRO5LaVghAoGBAKeY/NS5irv4UXLqW3Df\naUr464AR6dpRC+3FusDxyDzMhq2MW/OQ/3PfoP5d/s0arwXWHqibb1Z6reDOe3s2\n+kiw7bAjLxpLNxiH5yCGY6pSOuiPRGiexa7ruzPRBhaZ/GNDAmZV1eFPE8ngcgv2\npLGM2+ckQAAL4aqF0mKEEGnr\n-----END PRIVATE KEY-----\n",
-  "client_email": "myservice@proven-mind-258915.iam.gserviceaccount.com",
-  "client_id": "116706404718199352875",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/myservice%40proven-mind-258915.iam.gserviceaccount.com"
-}
+//Your credential..
