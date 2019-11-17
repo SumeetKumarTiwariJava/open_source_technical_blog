@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<style>
+h2 {
+  text-align: center;
+}
+
+body{
+background-color: #00ff40;
+font-size: 20px;
+}
+</style>
+
+<body>
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h2>
+            <span th:text="'Message arrived! Payload: ' + ${message}"></span>
+        </h2>
+    </div>
+</main>
+<!-- /.container -->
+
+</body>
+</html>
+
