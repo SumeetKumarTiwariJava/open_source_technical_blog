@@ -3,6 +3,10 @@ package com.opensource.technical.blog;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author sumeet tiwari<OPEN SOURCE TECHNICAL BLOG>
+ *
+ */
 @SpringBootApplication
 public class SpringBootOauth2GcpApplication {
 
